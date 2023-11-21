@@ -1,13 +1,17 @@
-const email=document.getElementById("email");
-email.addEventListener('input',()=>validate(email));
-const submit=document.getElementById("submit");
-submit.addEventListener('onclick',()=>validate(email))
-function validate(element){
-    if(element.validity.typeMismatch){
-        element.setCustomValidity('The Email is not in right format');
-        element.reportValidity();
-    } else{
-        element.setCustomValidity("");
+const dob = document.getElementById("dob");
+dobInput.addEventListener("input", () => validate(dob.value));
+
+function validate(DobValue) {
+    const today = new Date();
+    const Dobdate = new Date(DobValue);
+
+    const age = today.getFullYear() - Dobdate.getFullYear();
+
+    if (age < 18 || age > 55) {
+        dob.setCustomValidity("You must be between 18 and 55 years old to register.");
+        dob.reportValidity();
+    } else {
+        dob.setCustomValidity("");
     }
 }
 
