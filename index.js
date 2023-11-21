@@ -1,9 +1,9 @@
 const dob = document.getElementById("dob");
 dob.addEventListener("input", () => validate(dob));
 
-function validate(DobValue) {
+function validate(dob) {
     const today = new Date();
-    const Dobdate = new Date(DobValue);
+    const Dobdate = new Date(dob);
 
     const age = today.getFullYear() - Dobdate.getFullYear();
 
