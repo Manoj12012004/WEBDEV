@@ -1,4 +1,4 @@
-/*const email=document.getElementById("email");
+const email=document.getElementById("email");
 email.addEventListener('input',()=>validate(email));
 const submit=document.getElementById("submit");
 submit.addEventListener('onclick',()=>validate(email))
@@ -10,7 +10,7 @@ function validate(element){
         element.setCustomValidity("");
     }
 }
-*/
+
 let userform=document.getElementById("userform");
 const retrieveEntry=()=>{
     let entries=localStorage.getItem('user-entries');
