@@ -1,0 +1,21 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10%;
+    font-size: larger;
+    
+
+}
+#userentry{
+    text-align: center;
+}
+#submit{
+    width: 20%;
+    background-color: green;
+}
