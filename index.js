@@ -3,7 +3,7 @@ dob.addEventListener("input", () => validate(dob));
 
 function validate(dob) {
     const today = new Date();
-    const Dobdate = new Date(dob);
+    const Dobdate = new Date(dob.value);
 
     const age = today.getFullYear() - Dobdate.getFullYear();
 
