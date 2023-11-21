@@ -1,5 +1,5 @@
 const dob = document.getElementById("dob");
-dobInput.addEventListener("input", () => validate(dob.value));
+dob.addEventListener("input", () => validate(dob));
 
 function validate(DobValue) {
     const today = new Date();
@@ -14,7 +14,8 @@ function validate(DobValue) {
         dob.setCustomValidity("");
     }
 }
-
+const submit=document.getElementById("submit");
+submit.addEventListener('onclick',()=>validate(dob));
 let userform=document.getElementById("userform");
 const retrieveEntry=()=>{
     let entries=localStorage.getItem('user-entries');
