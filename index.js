@@ -38,8 +38,8 @@ const displayentry=()=>{
     <td>Name</td>
     <td>Email</td>
     <td>Password</td>
-    <td>DOB</td>
-    <td>AcceptedT/C</td>
+    <td>Dob</td>
+    <td>Accepted terms?</td>
     </tr>
     <tr>${tableEntries}</tr>
     </table>`
