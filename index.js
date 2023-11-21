@@ -8,7 +8,7 @@ function validate(dob) {
     const age = today.getFullYear() - Dobdate.getFullYear();
 
     if (age < 18 || age > 55) {
-        dob.setCustomValidity("You must be between 18 and 55 years old to register.");
+        dob.setCustomValidity("Age must be between 18 and 55 years to register.");
         dob.reportValidity();
     } else {
         dob.setCustomValidity("");
